@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Liang Lab 2</title>
+    <link rel="icon" type="image/x-icon" href="screenshots/favicon.ico" />
+</head>
+
+<body>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <header>
+        <h1>Group 1 Meeting Minutes</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Weekly Check In + Brainstorm <br>
+                October 5th, 2022 (10/5/22) </h2>
+        </div>
+    </main>
+    <div>
+        Meeting Recording + Audio:
+        <br>
+        <video width="320" height="240" controls>
+            <source src="screenshots/cs_vid.mp4" type="video/mp4">
+        </video>
+        <br>
+        <audio controls pause>
+            <source src="screenshots/cs_aud.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <details>
+        <summary>Meeting Summary</summary>
+        <p>Upload feature is done! Need to document work, prepare for presentation, and talk to TA about potential extensions</p>
+      </details>
+    <h3>Attendance</h3>
+    <section>
+        <ul>
+            <li><input type="checkbox" checked="checked" /> Vincent</li>
+            <li><input type="checkbox" /> Rick</li>
+            <li><input type="checkbox" checked="checked" />Morty</li>
+            <li><input type="checkbox" />Jerry</li>
+            <li><input type="checkbox" checked="checked" />Beth</li>
+        </ul>
+    </section>
+    <h3><u>Agenda</u></h3>
+    <section>
+        <nav>
+            <ol>
+                <li><a href="#weekly">Weekly Individual Updates & Comments, Concerns, Questions</a></li>
+                <li><a href="#old">Unfinished Business</a>
+                    <ul>
+                        <li>Split up presentation prep</li>
+                        <li>Discuss Topics to bring up to TA/Prof during next meet</li>
+                    </ul>
+                <li><a href="#new">New Business</a></li>
+                <ul>
+                    <li>Documentation Updates</li>
+                    <li>Short Demo on Upload Feature</li>
+                </ul>
+            </ol>
+        </nav>
+    </section>
+    <h3 id="weekly">Weekly Individual Updates & Comments, Concerns, Questions</h3>
+    <section>
+        Vincent
+        <ul>
+            <li>Finishing connection to database, need 2 more days</li>
+            <li>Will start on Unit Tests after</li>
+        </ul>
+        Morty
+        <ul>
+            <li>Finished Design Document, ready for review</li>
+            <li>Concerns about being able to implement everything before checkpoint</li>
+        </ul>
+        Beth
+        <ul>
+            <li>Ready to demo Upload Feature</li>
+            <li>Working on frontend design, wants design decision help</li>
+            <ul>
+                <li>Morty will help</li>
+            </ul>
+        </ul>
+        Jerry
+        <br><i>missing due to doctors app. left update in gc</i>
+        <ul>
+            <li>
+                <p>I just finished ramping up on HTML, will work w/ Beth on frontend pages. Rn
+                    having problems w/ github, reaching out to TA to resolve errors</p>
+            </li>
+        </ul>
+        Rick
+        <br><i><span style="color:red">Unexcused absenced... MIA</span></i>
+        <img src="screenshots/pickle.webp" alt="pickle rick!" width="45" height="60">
+    </section>
+
+    <h3 id="old">Unfinished Business</h3>
+    <section>
+        <u>Split up presentation prep</u>
+        <ul>
+            <li>
+                for slides, need intro, overview, frontend, backend, demo, challenges faced slides
+            </li>
+            <li>
+                respective groups work on their slide after Beth makes presentation skeleton
+            </li>
+            <li>
+                soft dead line 10/20, <em>hard deadline 10/22</em>
+            </li>
+        </ul>
+    </section>
+    <u>Discuss Topics to bring up to TA/Prof during next meet</u>
+    <ul>
+        <li>Concerns about finishing project by due date due to missing team member
+            & learning curve of new technologies
+        </li>
+        <li>Vincent will <a href="mailto:fakeTAEmail123@ucsd.edu">email TA</a> about concerns
+        </li>
+    </ul>
+
+    <h3 id="new">New Business</h3>
+    <section>
+        <u>Documentation Updates</u>
+        <ul>
+            <li>
+                Reminder that everyone needs to be documenting their work as they go
+            </li>
+        </ul>
+    </section>
+    <u>Short Demo on Upload Feature</u>
+    <ul>
+        <li>Beth showed demo on feature,<strong> .txt files are sucessfully updated to database</strong>... woo!</li>
+        <li>Concerns about different types of files were raised, <b>will implement a file type checker</b></li>
+    </ul>
+    <hr />
+    <footer>
+        <h3>Meeting Comments</h3>
+        <form onsubmit="alert('Message Sent!')">
+            <fieldset>
+                <input type="text" placeholder="Name" />
+                <input type="date"/><br>
+                <label for="msg">Comment/Message:</label><br>
+                <textarea id="msg" name="message" rows="4" cols="50"></textarea><br>
+                <input type="radio" id="general" name="comment">
+                <label for="general">General</label><br>
+                <input type="radio" id="warning" name="comment">
+                <label for="warning">Warning</label><br>
+                <input type="radio" id="crit" name="comment">
+                <label for="crit">Critical</label> <br>
+                <input type="checkbox" id="type1" name="type1">
+                <label for="type1">communication issue</label>
+                <input type="checkbox" id="type2" name="type2">
+                <label for="type2">implementation issue</label>
+                <input type="checkbox" id="type3" name="type3">
+                <label for="type3">timing issue</label><br>
+                <label for="ice cream">Enter your public password:</label><br>
+                <input list="ice_cream" name="ice cream" id="ice cream">
+                <datalist id="ice_cream">
+                    <option value="Vanilla">
+                    <option value="Strawberry">
+                    <option value="Chocolate">
+                    <option value="Cookies N Cream">
+                    <option value="Mint Chip">
+                </datalist> <br>
+                <label for="grade">Choose your grade:</label>
+                <select name="grades" id="grade">
+                    <option></option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>F</option>
+                </select><br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+        <br />
+        <div>CSE 110 Group 1 Meeting Minutes</div>
+    </footer>
+    
+</body>
+
+</html>
