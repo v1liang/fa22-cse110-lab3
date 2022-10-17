@@ -1,0 +1,48 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    font-family: 'Helvetica';
+}
+button:hover {
+    color: aqua;
+}
+a:active {
+    color: green;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none; 
+    gap: 25px;
+  }
+  
+.flex-item {
+    background: cyan;
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 25em));
+    grid-gap: 2em;
+  }
+.grid > li {
+    background: yellow;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+@media (max-width: 120px) {
+    .text{
+        width: 50%;
+    }
+}
+  
